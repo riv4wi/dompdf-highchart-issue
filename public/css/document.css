@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: rgb(159, 168, 195);
+    font-family: Ubuntu;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.box-appearance {
+    background-color: rgb(133, 116, 97);
+}
+
+.grid-layout {
+    width: 185mm; /* Ancho de la hoja A4 [210] */
+    height: 272mm; /* Altura de la hoja A4 [297]*/
+    margin: 0 auto; /* Centra el layout en la página */
+}
+
+.header {
+    background-color: rgb(65, 122, 197);
+    height: 6%;
+    width: 100%;
+}
+
+.header > div {
+    margin-top: 0.4em;
+    display: inline-block; /* Establece los divs como elementos en línea */
+    background-color: blue;
+}
+
+.left {
+    width: 50%;
+    float: left; /* Hace que los divs floten a la izquierda */
+}
+
+.right {
+    width: 30%;
+    float: right; /* Hace que los divs floten a la derecha */
+}
+
+.title {
+    text-align: left;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-left: 2.3em;
+    border: aqua solid;
+}
+
+.requested-by,
+.requested-date{
+    padding-top: 0.1em;
+    padding-right: 1em;
+    justify-content: right;
+    text-align: right;
+    font-size: 0.7em;
+    border: #102533 solid;
+}
+
+.third-row>div {
+    font-size: 1.2em;
+}
