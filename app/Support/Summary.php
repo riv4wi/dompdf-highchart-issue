@@ -80,6 +80,12 @@ class Summary
     }
 
 
+    public static function showGraphic(bool $inBackground=false)
+    {
+        return View('summary-profile', self::attributes($inBackground));
+    }
+
+
     /**
      * Force the download of the PDF file
      *

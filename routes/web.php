@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', DownloadSummaryController::class);
+Route::get('/', [DownloadSummaryController::class, 'download']);
+Route::get('/show', [DownloadSummaryController::class, 'showGraphic']);
